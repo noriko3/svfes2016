@@ -1,0 +1,14 @@
+<table>
+<% @data.each do |d| %>
+<tr>
+	<th><%= d[:time] %></th>
+	<td>
+		<% if d[:data] == 1 then %>
+		いました
+		<% else %>
+		いませんでした
+		<% end %>
+	</td>
+</tr>
+<% end %>
+</table>

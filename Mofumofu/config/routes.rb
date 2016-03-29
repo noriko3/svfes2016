@@ -53,4 +53,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get '/iruyo' => 'main#iruyo'
+  get '/inaiyo' => 'main#inaiyo'
+  get '/reset' => 'main#reset'
+  
+  get '/data' => 'data#index'
+  
 end
